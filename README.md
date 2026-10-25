@@ -18,7 +18,7 @@
 
 ## 📌 Overview
 
-Gitea / Forgejo self-hosted git forge configuration security auditor
+OGiteaX — Gitea / Forgejo Configuration Auditor. It provides go-ini app.ini parser + GITEA__/FORGEJO__ env overrides (docker-compose, systemd Environment=, __FILE secrets); Installer lock, secret strength (masked), registration, OpenID, 2FA, passwords, cookies, reverse-proxy auth. Built-in demo/self-test paths and severity gates help validate detections without touching production when those flags are used.
 
 ---
 
@@ -42,7 +42,10 @@ Gitea / Forgejo self-hosted git forge configuration security auditor
 ## 🚀 Usage
 
 ```bash
-./OGiteaX
+./OGiteaX                                     # interactive menu
+./OGiteaX --scan -r /path/to/root
+./OGiteaX --demo
+./OGiteaX --help
 ```
 
 ---
